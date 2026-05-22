@@ -14,7 +14,7 @@
           }
         }
     </script>
-</head>
+  </head>
 <body class="dark-theme">
     <div class="noise-overlay"></div>
     
@@ -73,18 +73,20 @@
             <div id="lidar-canvas-container">
                 <!-- Three.js will render here -->
                 <div class="scanning-animation"></div>
+                <div id="manual-hint" class="manual-hint hidden">
+                    MANUAL CONTROL ACTIVE: WASD / ARROWS TO MOVE
+                </div>
             </div>
         </section>
 
         <!-- Side Panel Right: Diagnostics & Missions -->
         <aside class="panel right-panel">
-            <div class="diagnostics-card">
-                <header>SYSTEM DIAGNOSTICS</header>
-                <ul class="diag-list">
-                    <li><span class="label">LEGS STATUS:</span> <span class="val green">NOMINAL</span></li>
-                    <li><span class="label">IMU STABILITY:</span> <span class="val green">STABLE</span></li>
-                    <li><span class="label">GPU LOAD:</span> <span class="val" id="gpu-load">12%</span></li>
-                </ul>
+            <div class="mission-card">
+                <header>CONTROL MODE</header>
+                <div class="mode-selector">
+                    <button class="mode-toggle-btn active" id="mode-auto">AUTO</button>
+                    <button class="mode-toggle-btn" id="mode-manual">MANUAL</button>
+                </div>
             </div>
             <div class="mission-card">
                 <header>MISSION CONTROL</header>
@@ -95,6 +97,14 @@
                     <button class="btn-action start">START INSPECTION</button>
                     <button class="btn-action stop">EMERGENCY STOP</button>
                 </div>
+            </div>
+            <div class="diagnostics-card">
+                <header>SYSTEM DIAGNOSTICS</header>
+                <ul class="diag-list">
+                    <li><span class="label">LEGS STATUS:</span> <span class="val green">NOMINAL</span></li>
+                    <li><span class="label">IMU STABILITY:</span> <span class="val green">STABLE</span></li>
+                    <li><span class="label">GPU LOAD:</span> <span class="val" id="gpu-load">12%</span></li>
+                </ul>
             </div>
             <div class="log-card">
                 <header>INCIDENT LOG</header>
