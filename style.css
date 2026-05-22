@@ -1,55 +1,14 @@
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --toggle-bg: #f0f0f0;
-    --transition-speed: 0.3s;
-}
-
-[data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --toggle-bg: #333333;
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color var(--transition-speed), color var(--transition-speed);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Pretendard', sans-serif;
-    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #333333;
 }
-
-main h1 {
+h1 {
     font-size: 3rem;
-    line-height: 1.5;
-    word-break: keep-all;
-}
-
-#theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    background-color: var(--toggle-bg);
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s, background-color var(--transition-speed);
-}
-
-#theme-toggle:hover {
-    transform: scale(1.1);
-}
-
-@media (max-width: 600px) {
-    main h1 {
-        font-size: 2rem;
-    }
+    letter-spacing: 0.2rem;
 }
