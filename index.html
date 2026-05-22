@@ -3,123 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QAIS | Quadruped Autonomous Inspection System</title>
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <title>준비중</title>
     <link rel="stylesheet" href="style.css">
-    <script type="importmap">
-        {
-          "imports": {
-            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-          }
-        }
-    </script>
-  </head>
-<body class="dark-theme">
-    <div class="noise-overlay"></div>
-    
-    <header class="dashboard-header">
-        <div class="system-id">
-            <span class="status-indicator online"></span>
-            <h1>QAIS COMMAND CENTER <small>v1.0.4 - AUTONOMOUS UNIT 01</small></h1>
-        </div>
-        <div class="global-telemetry">
-            <div class="tel-item">BAT: <span id="bat-val">98%</span></div>
-            <div class="tel-item">SIG: <span id="sig-val">EXCELLENT</span></div>
-            <div class="tel-item">TEMP: <span id="temp-val">42°C</span></div>
-            <div class="current-time" id="clock">00:00:00</div>
-        </div>
-    </header>
-
-    <main class="dashboard-grid">
-        <!-- Side Panel Left: Camera Feeds -->
-        <aside class="panel left-panel">
-            <div class="sensor-card">
-                <header>RGB MAIN FEED</header>
-                <div class="feed-placeholder rgb-feed">
-                    <div class="overlay-text">LIVE // CAM_01</div>
-                </div>
-            </div>
-            <div class="sensor-card">
-                <header>THERMAL IMAGING</header>
-                <div class="feed-placeholder thermal-feed">
-                    <div class="overlay-text">DETECTION: NORMAL</div>
-                </div>
-            </div>
-            <div class="sensor-card">
-                <header>PTZ TRACKING</header>
-                <div class="feed-placeholder ptz-feed">
-                    <div class="ptz-controls">
-                        <button class="ctrl-btn">▲</button>
-                        <div class="mid-ctrl">
-                            <button class="ctrl-btn">◀</button>
-                            <button class="ctrl-btn">▶</button>
-                        </div>
-                        <button class="ctrl-btn">▼</button>
-                    </div>
-                </div>
-            </div>
-        </aside>
-
-        <!-- Central Panel: 3D LiDAR -->
-        <section class="panel center-panel">
-            <header class="panel-header">
-                <h2>REAL-TIME 3D LiDAR MAPPING</h2>
-                <div class="view-modes">
-                    <button class="mode-btn active">POINT CLOUD</button>
-                    <button class="mode-btn">MESH</button>
-                </div>
-            </header>
-            <div id="lidar-canvas-container">
-                <!-- Three.js will render here -->
-                <div class="scanning-animation"></div>
-                <div id="manual-hint" class="manual-hint hidden">
-                    MANUAL CONTROL ACTIVE: WASD / ARROWS TO MOVE
-                </div>
-            </div>
-        </section>
-
-        <!-- Side Panel Right: Diagnostics & Missions -->
-        <aside class="panel right-panel">
-            <div class="mission-card">
-                <header>CONTROL MODE</header>
-                <div class="mode-selector">
-                    <button class="mode-toggle-btn active" id="mode-auto">AUTO</button>
-                    <button class="mode-toggle-btn" id="mode-manual">MANUAL</button>
-                </div>
-            </div>
-            <div class="mission-card">
-                <header>MISSION CONTROL</header>
-                <div class="mission-status">
-                    CURRENT TASK: <span id="task-name">STATIONARY_GUARD</span>
-                </div>
-                <div class="mission-actions">
-                    <button class="btn-action start">START INSPECTION</button>
-                    <button class="btn-action stop">EMERGENCY STOP</button>
-                </div>
-            </div>
-            <div class="diagnostics-card">
-                <header>SYSTEM DIAGNOSTICS</header>
-                <ul class="diag-list">
-                    <li><span class="label">LEGS STATUS:</span> <span class="val green">NOMINAL</span></li>
-                    <li><span class="label">IMU STABILITY:</span> <span class="val green">STABLE</span></li>
-                    <li><span class="label">GPU LOAD:</span> <span class="val" id="gpu-load">12%</span></li>
-                </ul>
-            </div>
-            <div class="log-card">
-                <header>INCIDENT LOG</header>
-                <div class="log-container" id="event-log">
-                    <div class="log-entry">[09:21:04] SYSTEM BOOT SUCCESSFUL</div>
-                    <div class="log-entry">[09:21:10] CONNECTED TO UNIT_01</div>
-                </div>
-            </div>
-        </aside>
+</head>
+<body>
+    <main>
+        <h1>준비중</h1>
     </main>
-
-    <footer class="dashboard-footer">
-        <div class="status-bar">SYSTEM STATUS: ALL SENSORS FUNCTIONAL // STANDBY FOR MISSION DATA</div>
-    </footer>
-
-    <script src="main.js" type="module"></script>
 </body>
 </html>
