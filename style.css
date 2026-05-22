@@ -1,1 +1,14 @@
-/* Add styles here */
+/* 피자빵 스타일 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    font-size: 5rem;
+    color: #ff6b6b;
+}
